@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  
+
 
     <nav class="flex_betwn container ">
         <div class="logo">
@@ -38,13 +38,17 @@
         <li><a class="nav-list" href="#port"> Portfolio </a></li>
         <li><a class="nav-list" href="#cont"> Contact </a></li>
     </ul>
-    <header id="hom" class="container">
 
-        <section class="heding_part">
+    <header id="hom" class="container flex_betwn">
+
+        <div class="text flex">
             <h3 class="position">Software Developer</h3>
             <h1 class="haedtext">Hi,I'm <span style="color: rgb(212, 21, 81);"> Krishna</span> <br> Kumar From Patna
             </h1>
-        </section>
+        </div>
+        <div class="profile">
+            <img src="img/profile.png" alt="">
+        </div>
     </header>
 
     <section id="about" class="about container flex">
@@ -104,18 +108,21 @@
             <div class="web flex servItm">
                 <i class="fa-solid fa-laptop-code"></i>
                 <h2>Web Development</h2>
-                <p>The applications typically use HTML, CSS, and JavaScript in the client, and node js general-purpose programming language in the server.
+                <p>The applications typically use HTML, CSS, and JavaScript in the client, and node js general-purpose
+                    programming language in the server.
                 </p>
             </div>
             <div class="UI flex servItm">
                 <i class="fa-regular fa-hard-drive"></i>
                 <h2>UI Design</h2>
-                <p>The applications typically use HTML, CSS, and JavaScript in the client, and node js general-purpose programming language in the server..
+                <p>The applications typically use HTML, CSS, and JavaScript in the client, and node js general-purpose
+                    programming language in the server..
                 </p>
             </div>
             <div class="app flex servItm"> <i class="fa-brands fa-app-store"></i>
                 <h2>App Design</h2>
-                <p>The applications typically use HTML, CSS, and JavaScript in the client, and node js general-purpose programming language in the server..
+                <p>The applications typically use HTML, CSS, and JavaScript in the client, and node js general-purpose
+                    programming language in the server..
                 </p>
             </div>
         </div>
@@ -214,8 +221,8 @@
         </div>
         <a href="" class="abtn">See More <i class="fa-solid fa-angle-down"></i></a>
     </section>
-    
-    <div id="ex"><img src="img/profile.png" alt=""></div>
+
+
 
     <section id="cont" class="contect container flex ">
         <div class="cv ">
@@ -234,12 +241,13 @@
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-whatsapp"></i>
             </div>
-            <a class="cva"  href="https://drive.google.com/file/d/1NRwjim-kJZ7Co5Z5-7NCSX2VQAseEZqx/view?usp=share_link" target="_blank" class="dcv"> <button>Download CV </button></a>
+            <a class="cva" href="https://drive.google.com/file/d/1NRwjim-kJZ7Co5Z5-7NCSX2VQAseEZqx/view?usp=share_link"
+                target="_blank" class="dcv"> <button>Download CV </button></a>
 
         </div>
 
         <div class="inputs">
-            <form  name="submit-to-google-sheet">
+            <form name="submit-to-google-sheet">
                 <input type="text" placeholder="Your Name" name="name" required> <br>
                 <input type="text" placeholder="Your Email" name="email"> <br>
                 <input type="number" placeholder="Your Mobile" name="number"> <br>
@@ -248,10 +256,10 @@
 
                 <h2 class="msgform"></h2>
             </form>
-           
 
-        </div> 
-    </section> 
+
+        </div>
+    </section>
     <footer class="container flex">
         Copyright &#169; Krishna. Made with ❤️ by Krishna Kumar
     </footer>
@@ -260,23 +268,23 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbz_82D7tkFkD63JhJC6WInZZLNRAO7C5BHZR9OKdKiISFjkJTcBPXEJO8rfOHMLMML1/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msgform=document.querySelector('.msgform');
-      
+        const msgform = document.querySelector('.msgform');
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response =>{
-                msgform.innerHTML='Message sent successfully'
-                setTimeout(function(){
-                    msgform.innerHTML=''
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msgform.innerHTML = 'Message sent successfully'
+                    setTimeout(function () {
+                        msgform.innerHTML = ''
 
-                },5000) 
-                form.reset()
-            })
+                    }, 5000)
+                    form.reset()
+                })
 
-            .catch(error => console.error('Error!', error.message))
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
 
 </html>
