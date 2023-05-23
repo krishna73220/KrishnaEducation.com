@@ -228,15 +228,24 @@
     }
     .service-head, .aboutme {
         font-size: 2rem;
+        text-align: center;
     }
     .photo{
         width: 70%;
         min-width: 200px;
     }
     footer{
-        font-size: 9px;
+        font-size: 11px;
     }
     .inputs input {
+        width: 100%;
+    }
+    .workDtl {
         width: 90%;
+        height: 200px;
+    }
+    .seivice-name>div {
+        width: 90%;
+        margin: 10px auto;
     }
 }
