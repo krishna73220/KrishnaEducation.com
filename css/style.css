@@ -32,19 +32,10 @@ body {
     max-width: 1430px;
     width: 100%;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
+    border: 1px solid red;
 }
 
-header {
-    width: 100%;
-    height: 90vh;
-    background-image: url("https://krishna73220.github.io/KrishnaEducation.com/img/profile.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    background-attachment: fixed;
-    border: 1px solid rgba(255, 255, 255, 0);
-}
 
 .logo {
     width: 250px;
@@ -62,16 +53,6 @@ nav {
     top: 0;
     background-color: rgb(229, 229, 229);
     z-index: 1;
-    padding: 0 60px;
-}
-
-#ex{
-    width: 0px;
-    height: 0px;
-    position: absolute;
-}
-#ex img{
-width: 100%;
 }
 
 .nav-link li {
@@ -100,27 +81,46 @@ width: 100%;
     transition: 0.5s;
 }
 
-.heding_part {
-    margin: 10px 60px;
-    font-size: 40px;
-    margin-top: 15%;
-}
+/* ********************************heding */
 
+header{
+    height: 600px;
+    margin-bottom: 5% !important;
+}
+.text{
+    width: 45%;
+    height: 100%;
+    border: 1px solid red;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 22px;
+}
 .haedtext {
-    font-size: 4.5rem;
+    font-size: 2.5em;
     color: rgb(3, 118, 3);
 }
 
 .position {
+    font-size: 1.8em;
     color: rgb(4, 4, 156);
     margin-bottom: 20px;
+}
+.profile{
+    width: 55%;
+    height: 100%; border: 1px solid red;
+    display: flex;
+    justify-content: end;
+    background-attachment: fixed;
+}
+.profile img{
+    max-width: 100%;
 }
 
 /* ---------------------------------about-------------------------- */
 
 .about {
     justify-content: space-between;
-    padding: 0 60px;
+
 
 }
 
@@ -142,6 +142,7 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: first baseline;
+    text-align: justify;
 }
 
 .aboutme {
@@ -212,8 +213,6 @@ width: 100%;
 
 
 .services {
-    /* height: 500px; */
-    padding: 0 60px;
     margin: 10% auto;
 }
 
@@ -262,10 +261,6 @@ width: 100%;
 }
 
 /* **********************************************My Work***************************** */
-.My-work {
-    padding: 0 60px;
-
-}
 
 .my-wrkMain {
     flex-wrap: wrap;
@@ -372,12 +367,13 @@ width: 100%;
     width: fit-content;
     text-decoration: none;
     border: 0.4px solid #ff004f;
-    padding: 16px 78px;
+    padding: 1% 6%;
     font-weight: 700;
     color: rgb(11, 11, 134);
     transition: 0.5s;
     border-radius: 5px;
     font-size: 20px;
+    min-width: max-content;
 }
 
 .abtn:hover {
@@ -388,8 +384,6 @@ width: 100%;
 /* *************************contect**************************************** */
 
 .contect {
-    padding: 0 60px;
-    /* height: 100%; */
     justify-content: space-between;
     margin: 100px auto;
 }
