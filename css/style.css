@@ -65,6 +65,15 @@ nav {
     padding: 0 60px;
 }
 
+#ex{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+#ex img{
+width: 100%;
+}
+
 .nav-link li {
     list-style: none;
     margin: 0 15px;
