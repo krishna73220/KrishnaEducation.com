@@ -197,13 +197,6 @@
 
 @media only screen and (max-width:400px) {
 
-    header{
-        height: 210px;
-
-    }
-    .text{
-        font-size: 9px;
-    }
     .logo {
         width: 150px;
     }
@@ -216,7 +209,9 @@
     .abou_head {
         font-size: 0.9rem;
     }
-
+    .abtn{
+        padding: 3% 9%;
+    }
 
     .about_headList {
         margin-right: 10px;
@@ -247,5 +242,15 @@
     .seivice-name>div {
         width: 90%;
         margin: 10px auto;
+    }
+    header{
+        flex-direction: column;
+        height:min-content;
+    }
+    .text{
+        width: 100%;
+    }
+    .profile{
+        width: 100%;
     }
 }
