@@ -32,8 +32,7 @@ body {
     max-width: 1430px;
     width: 100%;
     margin: auto;
-    /* overflow: hidden; */
-    border: 1px solid red;
+    padding: 0 20px;
 }
 
 
@@ -90,7 +89,6 @@ header{
 .text{
     width: 45%;
     height: 100%;
-    border: 1px solid red;
     flex-direction: column;
     align-items: flex-start;
     font-size: 22px;
@@ -107,7 +105,7 @@ header{
 }
 .profile{
     width: 55%;
-    height: 100%; border: 1px solid red;
+    height: 100%; 
     display: flex;
     justify-content: end;
     background-attachment: fixed;
@@ -120,8 +118,6 @@ header{
 
 .about {
     justify-content: space-between;
-
-
 }
 
 .photo {
@@ -225,7 +221,6 @@ header{
 
 .seivice-name>div {
     width: calc(90%/3);
-    /* height: 350px; */
     gap: 10px;
     background-color: rgb(194, 193, 193);
     border-radius: 15px;
@@ -385,7 +380,7 @@ header{
 
 .contect {
     justify-content: space-between;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .cv {
