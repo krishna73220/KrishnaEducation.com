@@ -1,7 +1,5 @@
 @media only screen and (max-width:1320px) {
-    .haedtext {
-        font-size: 3.5rem;
-    }
+
 
     .workDtl {
         width: 280px;
@@ -28,25 +26,17 @@
         font-size: 12px;
     }
 
-    .header {
-        height: 90vh;
-    }
+  
 }
 
 @media only screen and (max-width:1020px) {
-    .haedtext {
-        font-size: 2rem;
-    }
+    header{
+        height: 500px;
 
-    .heding_part {
-        font-size: 25px;
     }
-
-    header {
-        height: 80vh;
-        background-size: 600px;
+    .text{
+        font-size: 20px;
     }
-
     .nav-link li {
         margin: 0 8px;
         padding: 8px 12px;
@@ -67,10 +57,12 @@
 
 @media only screen and (max-width:900px) {
 
+   
     .about {
         flex-direction: column;
         padding: 20px 0;
         gap: 10px;
+        width: 100%;
     }
 
     .photo {
@@ -80,7 +72,7 @@
     }
 
     .aboutContent {
-        width: 85%;
+        width: 100%;
     }
 
     .workDtl {
@@ -114,9 +106,23 @@
     .cv button {
         padding: 14px 15px;
     }
+    header{
+        height: 450px;
+
+    }
+    .text{
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width:795px) {
+    header{
+        height: 400px;
+
+    }
+    .text{
+        font-size: 17px;
+    }
     .nav-link {
         display: none;
     }
@@ -125,18 +131,6 @@
         display: block;
     }
 
-    header {
-        height: 70vh;
-        background-size: 450px;
-    }
-
-    .haedtext {
-        font-size: 1.9rem;
-    }
-
-    .position {
-        font-size: 25px;
-    }
 
     .seivice-name {
         display: block;
@@ -169,17 +163,13 @@
 }
 
 @media only screen and (max-width:640px) {
-    header {
-        height: 390px;
-        background-size: 310px;
-    }
 
-    .haedtext {
-        font-size: 1.5rem;
-    }
+    header{
+        height: 310px;
 
-    .position {
-        font-size: 25px;
+    }
+    .text{
+        font-size: 14px;
     }
 
     .my-wrkMain {
@@ -206,11 +196,14 @@
 }
 
 @media only screen and (max-width:400px) {
-    header {
-        height: 390px;
-        background-size: 300px;
-    }
 
+    header{
+        height: 210px;
+
+    }
+    .text{
+        font-size: 9px;
+    }
     .logo {
         width: 150px;
     }
@@ -224,13 +217,6 @@
         font-size: 0.9rem;
     }
 
-    .haedtext {
-        font-size: 1.3rem;
-    }
-
-    .position {
-        font-size: 22px;
-    }
 
     .about_headList {
         margin-right: 10px;
@@ -246,5 +232,11 @@
     .photo{
         width: 70%;
         min-width: 200px;
+    }
+    footer{
+        font-size: 9px;
+    }
+    .inputs input {
+        width: 90%;
     }
 }
