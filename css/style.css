@@ -186,6 +186,9 @@ header{
     width: 100%;
     transition: 0.5s;
 }
+.about_headList:active{
+   color: rgb(253, 7, 130);
+}
 
 .about_detai {
     margin: 20px 0;
