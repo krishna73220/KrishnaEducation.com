@@ -207,6 +207,9 @@
         max-height: 500px;
 
     }
+       .profile img{
+        max-width: 90%;
+    }
 }
 
 @media only screen and (max-width:400px) {
@@ -258,7 +261,5 @@
         margin: 10px auto;
     }
    
-    .profile img{
-        max-width: 90%;
-    }
+ 
 }
