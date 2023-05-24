@@ -480,7 +480,7 @@ header{
     outline: none;
     font-size: 20px;
     border-radius: 5px;
-    box-shadow: 7px 10px 10px rgba(62, 62, 63, 0.2) inset, -2px -3px 10px rgb(186, 186, 186) inset;
+
 }
 
 input::placeholder {
