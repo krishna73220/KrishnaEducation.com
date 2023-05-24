@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link li {
+    position: relative;
+
+    overflow: hidden;
+}
+.abtn, .logo {
+    position: relative;
+
+    overflow: hidden; 
+}
+.togal{
+    position: relative;
+
+    overflow: hidden; 
+}
+
+
+.s1 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgb(163, 255, 163), rgb(238, 6, 6));
+    top: 0;
+    left: 0;
+    animation: ani1 2s linear infinite;
+}
+
+@keyframes ani1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.s2 {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(163, 255, 163), rgb(238, 6, 6));
+    right: 0px;
+    top: 0;
+    animation: ani2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes ani2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.s3 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgb(163, 255, 163), rgb(238, 6, 6));
+    left: 0;
+    bottom: 0;
+    animation: ani3 2s linear infinite;
+}
+
+@keyframes ani3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.s4 {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(163, 255, 163), rgb(238, 6, 6));
+    left: 0;
+    bottom: 0;
+    animation: ani4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes ani4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
