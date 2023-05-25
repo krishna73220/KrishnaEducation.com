@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/animation.css">
     <title>Persional Portfolio Website</title>
-      <link rel="shortcut icon" href="img/kk.jpg" />
+    <link rel="shortcut icon" href="img/kk.jpg" />
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             <li><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span><a
                     class="nav-list" href="#cont"> Contact </a></li>
         </ul>
-        <div class="togal flex"> <span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span><i class="fa-solid fa-bars"></i></div>
+        <div class="togal flex"> <i class="fa-solid fa-bars"></i></div>
 
     </nav>
 
@@ -57,7 +57,7 @@
 
         </div>
         <div class="profile">
-            <img src="img/profile.png" alt="">
+            <img id="picnone" src="img/profile.png" alt="">
         </div>
     </header>
 
@@ -73,7 +73,7 @@
                 Myself.
             </p>
             <div class="abou_head">
-                <h4 class="about_headList activelink ">Education</h4>
+                <h4 class="about_headList activelink">Education</h4>
                 <h4 class="about_headList">Skills</h4>
                 <h4 class="about_headList">Experience</h4>
             </div>
@@ -97,9 +97,9 @@
                         <li>CSS</li>
                         <li>JAVASCRIPT</li>
                         <li>WORDPRESS</li>
-                        <li>BOOTSTRAP</li>
                         <li>PYTHON</li>
-                                       
+                        <li>BOOTSTRAP</li>
+                        <li>REACT</li>
                     </ul>
                 </div>
                 <div class="exp active k1 ">
@@ -114,21 +114,21 @@
         <h1 class="service-head">My Services</h1>
         <div class="seivice-name flex">
             <div class="web flex servItm">
-                <i class="fa-solid fa-laptop-code"></i>
+              <div class="imgsr">  <img src="img/sr1.jpg" alt=""> </div>
                 <h2>Web Development</h2>
                 <p>The applications typically use HTML, CSS, and JavaScript in the client, and node js general-purpose
                     programming language in the server.
                 </p>
-            </div>
+            </div> 
             <div class="UI flex servItm">
-                <i class="fa-regular fa-hard-drive"></i>
-                <h2>UI Design</h2>
-                <p>The applications typically use HTML, CSS, and JavaScript in the client, and node js general-purpose
-                    programming language in the server..
+                <div class="imgsr"><img src="https://www.dynodesoft.com/assets/img/web-development/web_bg.png" alt=""></div>
+                <h2>WordPress Development</h2>
+                <p>WordPress is the most popular content management system (CMS) used by 43% of total websites today..
                 </p>
             </div>
-            <div class="app flex servItm"> <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
+            <div class="app flex servItm"> 
+                <div class="imgsr"><img src="https://litslink.com/wp-content/uploads/2021/03/web-development.png" alt=""></div>
+                <h2>Web Development</h2>
                 <p>The applications typically use HTML, CSS, and JavaScript in the client, and node js general-purpose
                     programming language in the server..
                 </p>
@@ -254,7 +254,7 @@
                 <a href="https://api.whatsapp.com/send?phone=917322021188&text=Hello this is the starting message"
                     target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <a class="cva" href="https://drive.google.com/file/d/1vqRfgOL0wpPbJN9k_AozTP8bWIRfNP_Q/view?usp=sharing"
+            <a class="cva" href="https://drive.google.com/file/d/1IhzRXSFNk8GQazKNPDkDLQWnFCoWpUsd/view?usp=sharing"
                 target="_blank" class="dcv"> <button>Download CV </button></a>
 
         </div>
@@ -262,10 +262,10 @@
         <div class="inputs">
             <form name="submit-to-google-sheet">
                 <input type="text" placeholder="Your Name" name="name" required> <br>
-                <input type="text" placeholder="Your Email" name="email"> <br>
-                <input type="number" placeholder="Your Mobile" name="number"> <br>
+                <input type="text" placeholder="Your Email" name="email" required> <br>
+                <input type="number" placeholder="Your Mobile (optional)" name="number"> <br>
                 <input id="msg" type="text" placeholder="Your Message" name="msg">
-                <input id="submit" type="submit" value="Submit">
+                <input class="activeClick" id="submit" type="submit" value="Submit">
 
                 <h2 class="msgform"></h2>
             </form>
@@ -301,8 +301,8 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         let typed = new Typed('#element', {
-    strings: ['Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer'],
-    typeSpeed: 100,
+            strings: ['Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer','.Web Developer','Web Developer'],
+    typeSpeed: 150,
   });
 
   </script>
