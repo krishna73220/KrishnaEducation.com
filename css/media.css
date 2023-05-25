@@ -136,9 +136,10 @@
         display: block;
     }
 
-    .seivice-name>div {
+    .servItm {
         width: 100%;
         margin: 10px 0;
+      height: 100% !important;
     }
 
     .contect {
@@ -193,23 +194,31 @@
     .abou_head {
         font-size: 1.2rem;
     }
-      header{
+    header{
         flex-direction: column;
         height:min-content;
-       
+        padding: 0 !important;
     }
     .text{
         width: 100%;
-
+        height: max-content;
+        position: absolute;
+        top: 50px; 
+        padding-left: 20px;
+    }
+    #picnone{
+        display: none;
     }
     .profile{
         width: 100%;
-        max-height: 500px;
-
+        height: 350px;
+        background-image: linear-gradient(180deg, 
+        rgba(240, 250, 149, 0.862), rgba(247, 247, 247, 0.519)), url(http://127.0.0.1:5500/img/profile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
     }
-       .profile img{
-        max-width: 90%;
-    }
+    
 }
 
 @media only screen and (max-width:400px) {
@@ -223,7 +232,7 @@
         margin-left: 80px;
     }
 
-   .abou_head {
+    .abou_head {
         font-size: 1.1rem;
     }
     .abtn{
@@ -260,6 +269,9 @@
         width: 90%;
         margin: 10px auto;
     }
-   
- 
+    
+    .profile img{
+        max-width: 90%;
+    }
+  
 }
