@@ -78,11 +78,7 @@ nav {
     background-color: rgb(212, 21, 81);
 }
 
-.about_headList:hover{
-    color: #2302c6;
-}
-
-.about_headList.activelink::after{
+.nav-list:hover::after {
     width: 100%;
     transition: 0.5s;
 }
@@ -93,7 +89,7 @@ header{
     height: 600px;
     margin-bottom: 5% !important;
     background-image: url(https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
-   
+   position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 0 0 20px !important;
@@ -122,7 +118,7 @@ header{
     height: 100%; 
     display: flex;
     justify-content: end;
-    background-attachment: fixed;
+
 }
 .profile img{
     max-width: 100%;
@@ -185,15 +181,17 @@ header{
     height: 3px;
     background-color: rgb(212, 21, 81);
 }
+.about_headList:hover{
+    color: #2302c6;
+}
 
-.about_headList:hover::after {
+.about_headList.activelink::after{
     width: 100%;
     transition: 0.5s;
 }
 .about_headList:active{
    color: rgb(253, 7, 130);
 }
-
 .about_detai {
     margin: 20px 0;
     width: 100%;
@@ -229,35 +227,6 @@ header{
     margin: 10% auto;
 
 }
-
-.seivice-name {
-    width: 100%;
-    height: 85%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.seivice-name>div {
-    color: rgb(200, 182, 255);
-    width: calc(90%/3);
-    gap: 10px;
-    background-color: rgb(194, 193, 193);
-    border-radius: 15px;
-    cursor: pointer;
-    background-image: linear-gradient(180deg, 
-    rgba(104, 110, 104, 0.53), rgb(8, 0, 0)), url('https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-
-    background-position: center;
-    background-size: cover;
-}
-
-.seivice-name>div:hover {
-    background-color: rgba(252, 75, 131, 0.79);
-    color: white;
-    transition: 0.5s;
-    transform: translateY(-2%) scale(1.1);
-}
-
 .service-head {
     font-size: 3rem;
     color: rgb(3, 118, 3);
@@ -265,19 +234,46 @@ header{
 
 }
 
+.seivice-name {
+    width: 100%;
+   
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .servItm {
-    padding: 30px;
+    color: #fff!important;
+    width: calc(85%/3);
+    gap: 10px;
+    background-color: rgb(194, 193, 193);
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(#ffd06c,#ff311a);
+
+}
+
+.servItm:hover {
+    background-color: rgba(252, 75, 131, 0.79);
+    color: white;
+    transition: 0.5s;
+    transform: translateY(-2%) scale(1.1);
+}
+
+.servItm {
+    padding: 10px;
     flex-direction: column;
     text-align: justify;
 }
-
-.servItm i {
-    font-size: 30px;
-    color: #ff5d90;
+.imgsr{
+    width: 150px;
+    height: 150px;
+}
+.imgsr img {
+width: 100%;
 }
 
 .servItm h2 {
-    margin: 50px 0;
+    margin: 10px 0;
 }
 
 /* **********************************************My Work***************************** */
@@ -474,6 +470,9 @@ header{
     font-size: 18px;
 
 }
+.cv button:active{
+    background-color: green;
+}
 .msgform{
     color: green;
     position: absolute;
@@ -487,7 +486,6 @@ header{
     outline: none;
     font-size: 20px;
     border-radius: 5px;
-
 }
 
 input::placeholder {
@@ -505,16 +503,19 @@ input::placeholder {
     cursor: pointer;
     box-shadow: none;
 }
-
+#submit:active{
+    background-color: green;
+}
 .togal {
+
     display: none;
     font-size: 35px;
     color: rgb(11, 11, 134);
-    padding: 5px 11px;
+    padding: 6px 11px;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.5s;
-    box-shadow: 8px 10px 14px rgba(62, 62, 63, 0.2), -2px -2px 21px 0px white;
+    box-shadow: 8px 10px 14px rgba(62, 62, 63, 0.2), -2px -2px 21px 0px white; 
 }
 
 .togal:hover {
