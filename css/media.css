@@ -273,5 +273,24 @@
     .profile img{
         max-width: 90%;
     }
+       .text{
+        width: 100%;
+        height: max-content;
+        position: absolute;
+        top: 50px; 
+        padding-left: 20px;
+    }
+    #picnone{
+        display: none;
+    }
+    .profile{
+        width: 100%;
+        height: 350px;
+        background-image: linear-gradient(180deg, 
+        rgba(240, 250, 149, 0.862), rgba(247, 247, 247, 0.519)), url("https://krishna90071748.files.wordpress.com/2023/05/profile.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+    }
   
 }
