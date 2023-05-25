@@ -78,7 +78,11 @@ nav {
     background-color: rgb(212, 21, 81);
 }
 
-.nav-list:hover::after {
+.about_headList:hover{
+    color: #2302c6;
+}
+
+.about_headList.activelink::after{
     width: 100%;
     transition: 0.5s;
 }
