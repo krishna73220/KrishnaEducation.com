@@ -66,13 +66,20 @@
     }
 
     .photo {
-        width: 70%;
+        width: 100%;
         min-width: 300px;
-
+        padding: 10px 0;
+        background: linear-gradient(#ffd06c,#ff311a);
+        border-radius: 10px;
+    }
+    .photo img{
+        width: 70%;
     }
 
     .aboutContent {
         width: 100%;
+        background: linear-gradient(#ffd06c,#ff311a26);
+        border-radius: 10px;
     }
 
     .workDtl {
@@ -269,11 +276,7 @@
         width: 90%;
         margin: 10px auto;
     }
-    
-    .profile img{
-        max-width: 90%;
-    }
-       .text{
+    .text{
         width: 100%;
         height: max-content;
         position: absolute;
