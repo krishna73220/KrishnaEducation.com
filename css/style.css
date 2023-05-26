@@ -130,7 +130,9 @@ header{
     justify-content: space-between;
     background: linear-gradient(#ffd06c,#ff311a26);
 }
-
+#expId{
+    text-align:center; 
+}
 .photo {
     width: 30%;
     min-width: 400px;
