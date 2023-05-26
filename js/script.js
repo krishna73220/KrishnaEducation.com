@@ -57,6 +57,26 @@ about_headList[2].addEventListener("click",function(){
     about_headList[2].classList.add("activelink");
 })
 
+let fleg = 1;
 
+
+function inputFun() {
+
+
+
+    if(fleg !==1){
+         
+        document.querySelector(".msgform").textContent=""
+        return false;
+      
+    }
+    else{
+        document.querySelector(".msgform").textContent="Message sent successfully";
+        form.reset()
+         return true;
+        
+    }
+
+}
 
 
