@@ -305,12 +305,12 @@
                 e.preventDefault()
                 fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                     .then(response => {
-                        msgform.innerHTML = 'Message sent successfully'
+//                         msgform.innerHTML = 'Message sent successfully'
                         setTimeout(function () {
                             msgform.innerHTML = ''
 
                         }, 5000)
-                        form.reset()
+//                         form.reset()
                     })
 
                     .catch(error => console.error('Error!', error.message))
