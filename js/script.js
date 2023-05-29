@@ -72,7 +72,7 @@ function inputFun() {
     }
     else{
         document.querySelector(".msgform").textContent="Message sent successfully";
-        form.reset()
+//         form.reset()
          return true;
         
     }
