@@ -101,11 +101,11 @@
                         <li>WORDPRESS</li>
                         <li>PYTHON</li>
                         <li>BOOTSTRAP</li>
-                       
+
                     </ul>
                 </div>
                 <div id="expId" class="exp active k1 ">
-                    <h4>Intenship at CybroCompany,patna</h4>
+                    <h4>Intenship at CybroCompany,Patna</h4>
                     <p>2022-Current</p>
                 </div>
             </div>
@@ -228,23 +228,58 @@
             </div>
             <div class=" workDtl ">
                 <div class="layer flex">
-                    <h3>YouTub Clone</h3>
-                    <p>Modern Youtube Cloning Using HTML CSS JAVASCRIPT</p>
-                    <a href="https://github.com/krishna73220/Projects/tree/b85a293c7a39692a1dbc9b54daf18747a9164637/11.%20YouTube"
+                    <h3>Bank Transection System</h3>
+                    <p>Banking Transection System Using HTML CSS JAVASCRIPT</p>
+                    <a href="https://github.com/krishna73220/Projects/tree/84bd2c7f1a53d7db2b6500a7c0f656160a3dd6b0/25.%20Bank%20Transaction%20System"
                         target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class=" workDtl ">
                 <div class="layer flex">
-                    <h3>YouTub Clone</h3>
-                    <p>Modern Youtube Cloning Using HTML CSS JAVASCRIPT</p>
-                    <a href="https://github.com/krishna73220/Projects/tree/b85a293c7a39692a1dbc9b54daf18747a9164637/11.%20YouTube"
+                    <h3>Ludo Game</h3>
+                    <p>Modern Ludo Game Using HTML CSS JAVASCRIPT</p>
+                    <a href="https://github.com/krishna73220/Projects/tree/84bd2c7f1a53d7db2b6500a7c0f656160a3dd6b0/26.%20Ludo%20Game"
                         target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
+
+            <div class=" workDtl seeMore">
+                <div class="layer flex">
+                    <h3>Analog Clock</h3>
+                    <p>Modern Analog Clock Using HTML CSS JAVASCRIPT</p>
+                    <a href="https://github.com/krishna73220/Projects/tree/84bd2c7f1a53d7db2b6500a7c0f656160a3dd6b0/21.%20Analog%20Clock"
+                        target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class=" workDtl seeMore">
+                <div class="layer flex">
+                    <h3>Password Generator</h3>
+                    <p>Password Generator Using HTML CSS JAVASCRIPT</p>
+                    <a href="https://github.com/krishna73220/Projects/tree/84bd2c7f1a53d7db2b6500a7c0f656160a3dd6b0/22.%20Password%20Generator"
+                        target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class=" workDtl seeMore">
+                <div class="layer flex">
+                    <h3>Weather App</h3>
+                    <p>Modern Weather App Using HTML CSS JAVASCRIPT</p>
+                    <a href="https://github.com/krishna73220/Projects/tree/84bd2c7f1a53d7db2b6500a7c0f656160a3dd6b0/23.%20%20Weather%20App"
+                        target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class=" workDtl seeMore">
+                <div class="layer flex">
+                    <h3>Car animation</h3>
+                    <p>Car animation Using HTML CSS JAVASCRIPT</p>
+                    <a href="https://github.com/krishna73220/Projects/tree/84bd2c7f1a53d7db2b6500a7c0f656160a3dd6b0/24.%20Car%20Animation"
+                        target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
         </div>
-        <a href="" class="abtn"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span
-                class="s4"></span> See More <i class="fa-solid fa-angle-down"></i></a>
+        <a  class="abtn">
+            <span class="s1"></span><span class="s2"></span><span class="s3"></span><span
+                class="s4"></span><span></span> See More <i class="fa-solid fa-angle-down"></i></a>
     </section>
 
 
@@ -271,16 +306,16 @@
                 <a href="https://api.whatsapp.com/send?phone=917322021188&text=Hello this is the starting message"
                     target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <a class="cva" href="https://drive.google.com/file/d/1vqRfgOL0wpPbJN9k_AozTP8bWIRfNP_Q/view?usp=sharing"
+            <a class="cva" href="https://drive.google.com/file/d/1CbuqkM86P-lRgDbc3Fz5MwZb27Pe7upL/view?usp=sharing"
                 target="_blank" class="dcv"> <button>Download CV </button></a>
 
         </div>
 
         <div class="inputs">
             <form name="submit-to-google-sheet" onsubmit="return inputFun()">
-                <input class="sname" type="text" placeholder="Your Name" name="name" required> <br>
-                <input type="text" placeholder="Your Email" name="email" required> <br>
-                <input type="number" placeholder="Your Mobile (optional)" name="number"> <br>
+                <input type="text" id="sname" placeholder="Your Name" name="name" required> <br>
+                <input type="text" id="email" placeholder="Your Email" name="email" required> <br>
+                <input type="number" id="Mobile" placeholder="Your Mobile (optional)" name="number1"> <br>
                 <input id="msg" type="text" placeholder="Your Message" name="msg" required>
                 <input class="activeClick" id="submit" type="submit" value="Submit">
 
@@ -301,27 +336,27 @@
         const msgform = document.querySelector('.msgform');
 
         form.addEventListener('submit', e => {
-         
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then(response => {
-//                         msgform.innerHTML = 'Message sent successfully'
-                        setTimeout(function () {
-                            msgform.innerHTML = ''
 
-                        }, 5000)
-                        form.reset()
-                    })
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    // msgform.innerHTML = 'Message sent successfully'
+                    setTimeout(function () {
+                        msgform.innerHTML = ''
 
-                    .catch(error => console.error('Error!', error.message))
-            
+                    }, 5000)
+                    form.reset()
+                })
+
+                .catch(error => console.error('Error!', error.message))
+
         })
     </script>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         let typed = new Typed('#element', {
-            strings: ['Software Developer', 'software Developer', 'Software Developer', 'software Developer', 'Software Developer', 'software Developer', 'Software Developer', 'software Developer', 'Software Developer', 'software Developer', 'Software Developer', 'software Developer', 'Software Developer', 'software Developer', 'Software Developer', 'software Developer', 'Software Developer', 'software Developer', 'Software Developer', 'software Developer', 'Software Developer', 'software Developer'],
+            strings: ['Web Developer', 'web Developer', 'Web Developer', 'web Developer', 'Web Developer', 'web Developer', 'Web Developer', 'web Developer', 'Web Developer', 'web Developer', 'Web Developer', 'web Developer', 'Web Developer', 'web Developer', 'Web Developer', 'web Developer', 'Web Developer', 'web Developer', 'Web Developer', 'web Developer', 'Web Developer', 'web Developer'],
             typeSpeed: 150,
         });
 
