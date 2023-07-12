@@ -48,7 +48,6 @@ body {
 
 nav {
     height: 120px;
-    margin: 0 60px;
     position: sticky;
     top: 0;
     background-color: rgb(229, 229, 229);
@@ -122,7 +121,7 @@ header{
 }
 .profile img{
     max-width: 100%;
-     border-radius: 5px;
+    border-radius: 5px;
 }
 
 /* ---------------------------------about-------------------------- */
@@ -130,7 +129,7 @@ header{
 .about {
     justify-content: space-between;
     background: linear-gradient(#ffd06c,#ff311a26);
-     border-radius: 5px;
+    border-radius: 5px;
 }
 #expId{
     text-align:center; 
@@ -340,13 +339,29 @@ width: 100%;
 }
 
 .my-wrkMain>div:nth-of-type(11) {
-    background-image: url(https://media.istockphoto.com/id/484950366/photo/tempature-gauge.jpg?s=612x612&w=is&k=20&c=7WCmTWDBPb50_KhaR_pT_nJTL01ogQrv_1wVRRgRe2I=);
+    background-image: url('https://img.freepik.com/free-vector/finance-services-financial-transaction-e-commerce-e-payment_335657-3134.jpg?w=2000');
 }
 
 .my-wrkMain>div:nth-of-type(12) {
-    background-image: url(https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80);
+    background-image: url('https://ludoking.com/images/left.png');
+}
+.my-wrkMain>div:nth-of-type(13) {
+    background-image: url('https://m.media-amazon.com/images/I/81nUFx9sXoL._AC_UF894,1000_QL80_.jpg');
+}
+.my-wrkMain>div:nth-of-type(14) {
+    background-image: url('https://i0.wp.com/whatismyip.network/wp-content/uploads/2019/09/Strong-Password-Generator.jpg?fit=1280%2C721&ssl=1');
+}
+.my-wrkMain>div:nth-of-type(15) {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/6408/6408789.png');
+}
+.my-wrkMain>div:nth-of-type(16) {
+    background-image: url('https://ak0.picdn.net/shutterstock/videos/16459990/thumb/1.jpg?ip=x480');
 }
 
+.seeMore{
+    display: none;
+    
+}
 
 .layer {
     width: 100%;
@@ -395,6 +410,7 @@ width: 100%;
     font-size: 20px;
     min-width: max-content;
     box-shadow: 8px 10px 14px rgba(62, 62, 63, 0.2), -2px -2px 21px 0px white;
+    cursor: pointer;
 }
 
 .abtn:hover {
